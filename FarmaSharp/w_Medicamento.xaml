@@ -5,6 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FarmaSharp"
         mc:Ignorable="d"
-        Title="w_Medicamento" Height="300" Width="300">
-    <Grid/>
+        Title="w_Medicamento" Height="400" Width="900" Loaded="Window_Loaded">
+    <Canvas>
+        <Label x:Name="label" Content="Id" Canvas.Left="26" Canvas.Top="31"/>
+        <TextBox x:Name="txtId" Height="35" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="22" Width="120"/>
+        <Label x:Name="label_Copy" Content="Nombre:" Canvas.Left="14" Canvas.Top="83"/>
+        <TextBox x:Name="txtNombre" Height="35" Canvas.Left="96" TextWrapping="Wrap" Text="" Canvas.Top="74" Width="142"/>
+        <Label x:Name="label_Copy1" Content="Descripción:" Canvas.Left="10" Canvas.Top="135"/>
+        <TextBox x:Name="txtDescripcion" Height="36" Canvas.Left="96" TextWrapping="Wrap" Text="" Canvas.Top="126" Width="130"/>
+        <Label x:Name="label_Copy2" Content="Observacion:" Canvas.Left="10" Canvas.Top="187"/>
+        <TextBox x:Name="txtObservacion" Height="36" Canvas.Left="96" TextWrapping="Wrap" Text="" Canvas.Top="180" Width="142"/>
+        <Label x:Name="label_Copy3" Content="Tipo Medicamento   :" Canvas.Left="13" Canvas.Top="221"/>
+        <RadioButton Content="Pastillas" x:Name="rdbPastillas" Canvas.Left="14" Canvas.Top="268"/>
+        <RadioButton Content="Jarabe" x:Name="rdbJarabe" Canvas.Left="94" Canvas.Top="268"/>
+        <RadioButton Content="Inyectable" x:Name="rdbInyectable" Canvas.Left="172" Canvas.Top="268"/>
+        <DataGrid x:Name="dgMedicamento" MouseDoubleClick="dgMedicamento_MouseDoubleClick" Canvas.Left="243" Canvas.Top="22" Height="225" Width="639"/>
+        <Button x:Name="btnLimpiar" Click="BtnLimpiar_Click" Content="Limpiar" Canvas.Left="230" Canvas.Top="305" Width="101" RenderTransformOrigin="1.736,0.311"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" Canvas.Left="336" Canvas.Top="305" Width="101" RenderTransformOrigin="1.736,0.311" Click="btnEliminar_Click"/>
+        <Button x:Name="btnModificar" Click="ModificacionDeMaterial" Content="Modificar" Canvas.Left="442" Canvas.Top="305" Width="101" RenderTransformOrigin="1.736,0.311"/>
+        <Button x:Name="btnGuardar" Content="Guardar" Click="btnGuardar_Click" Canvas.Left="548" Canvas.Top="305" Width="106" RenderTransformOrigin="1.736,0.311"/>
+
+
+    </Canvas>
 </Window>
